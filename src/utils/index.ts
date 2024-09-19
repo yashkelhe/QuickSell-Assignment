@@ -76,7 +76,7 @@ const getPriotityLabel = (priority: number) => {
 };
 
 const orderByPriority = (tickets: Ticket[]) =>
-  tickets.sort((a: Ticket, b: Ticket) => (a.priority > b.priority ? -1 : 1));
+  tickets.sort((a: Ticket, b: Ticket) => (a.priority < b.priority ? -1 : 1));
 const orderByTitle = (tickets: Ticket[]) =>
   tickets.sort((a: Ticket, b: Ticket) => (a.title < b.title ? -1 : 1));
 
