@@ -21,7 +21,7 @@ function App() {
       .then((resp) => resp.json())
       .then((res) => {
         const { tickets, users } = res;
-        // the data will be store in the tickets
+        // the data will be store in the  tickets
         setTickets(tickets);
         // user Data
         setUserData(mapUsersByUserId(users));
